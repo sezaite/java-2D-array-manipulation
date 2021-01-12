@@ -26,10 +26,10 @@ public class JavaApplication5 {
             }
         }
 //pagrindine funkcija:
-        for (int i = 1; i < array.length; i++) { //modifikuoti pradesiu nuo antros eilutes (pirma ir jau tinka)
+        for (int i = 1; i < array.length; i++) { //modifikuoti pradesiu nuo antros eilutes (pirma jau ir taip tinka)
             temp = finalArr[i - 1][0]; //issisaugau pirmaji array skaiciu is praejusios array
             for (int j = 0; j < finalArr[i].length - 1; j++) {
-                finalArr[i][j] = finalArr[i - 1][j + 1]; //istatau naujus skaicius, paimtus is praeitos array ir paslinktus per viena indeksa
+                finalArr[i][j] = finalArr[i - 1][j + 1]; //istatau naujus skaicius, paimtus is praeitos array eilutes ir paslinktus per viena indeksa
                 finalArr[i][finalArr[i].length - 1] = temp; // i paskutini array indeksa idedu issaugotaja pirmo skaiciaus (temp) reiksme 
             }
         }
